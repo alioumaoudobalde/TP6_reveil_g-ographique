@@ -26,7 +26,7 @@
             margin: 0 auto;
             background: white;
             border-radius: 12px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             overflow: hidden;
         }
 
@@ -279,7 +279,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.9);
+            background: rgba(0, 0, 0, 0.9);
             justify-content: center;
             align-items: center;
         }
@@ -356,32 +356,36 @@
                     <li>Activez GitHub Pages dans les paramètres du repo</li>
                     <li>Partagez le lien : <code>https://votre-username.github.io/tp6-reveil-geo</code></li>
                 </ol>
-                
+
                 <div class="command-block">
-# Commandes Git à exécuter dans VS Code
-git init
-git add .
-git commit -m "Initial commit - TP6 Réveil Géographique"
-git branch -M main
-git remote add origin https://github.com/votre-username/tp6-reveil-geo.git
-git push -u origin main
+                    # Commandes Git à exécuter dans VS Code
+                    git init
+                    git add .
+                    git commit -m "Initial commit - TP6 Réveil Géographique"
+                    git branch -M main
+                    git remote add origin https://github.com/votre-username/tp6-reveil-geo.git
+                    git push -u origin main
                 </div>
             </div>
 
             <div class="section">
                 <h2>Question 1 : Projections et coordonnées géographiques</h2>
-                
+
                 <div class="question">
                     <div class="question-title">Qui a défini la projection de 1569 ?</div>
                     <div class="answer">
-                        <strong>Réponse :</strong> Gerardus Mercator (Gérard Mercator) a défini la <span class="highlight">projection de Mercator</span> en 1569, encore utilisée aujourd'hui pour la plupart des planisphères.
+                        <strong>Réponse :</strong> Gerardus Mercator (Gérard Mercator) a défini la <span
+                            class="highlight">projection de Mercator</span> en 1569, encore utilisée aujourd'hui pour la
+                        plupart des planisphères.
                     </div>
                 </div>
 
                 <div class="question">
                     <div class="question-title">Système de coordonnées pour la géolocalisation</div>
                     <div class="answer">
-                        <strong>Réponse :</strong> Le système de coordonnées couramment utilisé est le <span class="highlight">système de coordonnées géographiques (latitude/longitude)</span> basé sur le système géodésique WGS84 (World Geodetic System 1984).
+                        <strong>Réponse :</strong> Le système de coordonnées couramment utilisé est le <span
+                            class="highlight">système de coordonnées géographiques (latitude/longitude)</span> basé sur
+                        le système géodésique WGS84 (World Geodetic System 1984).
                     </div>
                 </div>
 
@@ -389,8 +393,12 @@ git push -u origin main
                     <div class="question-title">Définitions de la latitude et longitude</div>
                     <div class="answer">
                         <ul>
-                            <li><strong>Latitude (φ)</strong> : Angle entre le plan équatorial et la droite joignant le point considéré au centre de la Terre (de -90° à +90°, négatif au Sud, positif au Nord)</li>
-                            <li><strong>Longitude (λ)</strong> : Angle entre le méridien de Greenwich et le méridien passant par le point considéré (de -180° à +180°, négatif à l'Ouest, positif à l'Est)</li>
+                            <li><strong>Latitude (φ)</strong> : Angle entre le plan équatorial et la droite joignant le
+                                point considéré au centre de la Terre (de -90° à +90°, négatif au Sud, positif au Nord)
+                            </li>
+                            <li><strong>Longitude (λ)</strong> : Angle entre le méridien de Greenwich et le méridien
+                                passant par le point considéré (de -180° à +180°, négatif à l'Ouest, positif à l'Est)
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -398,24 +406,33 @@ git push -u origin main
                 <div class="question">
                     <div class="question-title">Trajectoires aériennes</div>
                     <div class="answer">
-                        <p><strong>Pourquoi changer de cap ?</strong> Un avion Paris-Tokyo change de cap car il suit une <span class="highlight">orthodromie</span> (great circle), qui est la trajectoire la plus courte sur une sphère. Sur une projection de Mercator, cette route apparaît courbe.</p>
+                        <p><strong>Pourquoi changer de cap ?</strong> Un avion Paris-Tokyo change de cap car il suit une
+                            <span class="highlight">orthodromie</span> (great circle), qui est la trajectoire la plus
+                            courte sur une sphère. Sur une projection de Mercator, cette route apparaît courbe.</p>
                         <br>
-                        <p><strong>Trajectoire d'azimut constant :</strong> C'est une <span class="highlight">loxodromie</span> (rhumb line). Ce n'est PAS la route la plus courte, mais elle est plus facile à naviguer.</p>
+                        <p><strong>Trajectoire d'azimut constant :</strong> C'est une <span
+                                class="highlight">loxodromie</span> (rhumb line). Ce n'est PAS la route la plus courte,
+                            mais elle est plus facile à naviguer.</p>
                         <br>
-                        <p><strong>Plus courte route :</strong> L'<span class="highlight">orthodromie</span> (great circle route) - arc de grand cercle.</p>
+                        <p><strong>Plus courte route :</strong> L'<span class="highlight">orthodromie</span> (great
+                            circle route) - arc de grand cercle.</p>
                     </div>
                 </div>
 
                 <div class="question">
                     <div class="question-title">Formule de distance angulaire</div>
                     <div class="formula">
-                        D<sub>B→A</sub> = arccos(sin(φ<sub>A</sub>) sin(φ<sub>B</sub>) + cos(φ<sub>A</sub>) cos(φ<sub>B</sub>) cos(λ<sub>B</sub>-λ<sub>A</sub>))
+                        D<sub>B→A</sub> = arccos(sin(φ<sub>A</sub>) sin(φ<sub>B</sub>) + cos(φ<sub>A</sub>)
+                        cos(φ<sub>B</sub>) cos(λ<sub>B</sub>-λ<sub>A</sub>))
                     </div>
                     <div class="answer">
                         <ul>
-                            <li><strong>D<sub>B→A</sub></strong> : Distance angulaire entre les points A et B (en radians)</li>
-                            <li><strong>φ<sub>A</sub>, φ<sub>B</sub></strong> : Latitudes des points A et B (en radians)</li>
-                            <li><strong>λ<sub>A</sub>, λ<sub>B</sub></strong> : Longitudes des points A et B (en radians)</li>
+                            <li><strong>D<sub>B→A</sub></strong> : Distance angulaire entre les points A et B (en
+                                radians)</li>
+                            <li><strong>φ<sub>A</sub>, φ<sub>B</sub></strong> : Latitudes des points A et B (en radians)
+                            </li>
+                            <li><strong>λ<sub>A</sub>, λ<sub>B</sub></strong> : Longitudes des points A et B (en
+                                radians)</li>
                             <li><strong>sin, cos, arccos</strong> : Fonctions trigonométriques</li>
                         </ul>
                         <br>
@@ -435,11 +452,13 @@ Donc D_A→B = D_B→A</textarea>
 
             <div class="section">
                 <h2>Question 2 : Le mille marin</h2>
-                
+
                 <div class="question">
                     <div class="question-title">Définition du mille marin</div>
                     <div class="answer">
-                        Le <span class="highlight">mille marin</span> (ou mille nautique) a été défini comme la longueur d'un arc de méridien correspondant à une minute d'angle (1/60 de degré) à la surface de la Terre.
+                        Le <span class="highlight">mille marin</span> (ou mille nautique) a été défini comme la longueur
+                        d'un arc de méridien correspondant à une minute d'angle (1/60 de degré) à la surface de la
+                        Terre.
                         <br><br>
                         Sur une sphère de rayon R :<br>
                         1 mille marin = R × (1 minute d'arc en radians) = R × (π/180°) × (1/60)°
@@ -479,12 +498,12 @@ distance_km = distance_metres / 1000;</textarea>
                     </div>
                 </div>
             </div>
-
             <div class="section">
                 <h2>Question 3 : Application de géolocalisation</h2>
-                
+
                 <div class="info-box">
-                    <strong>Objectif :</strong> Créer une application qui affiche la position GPS actuelle et calcule la distance vers un point cible.
+                    <strong>Objectif :</strong> Créer une application qui affiche la position GPS actuelle et calcule la
+                    distance vers un point cible.
                 </div>
 
                 <div class="question">
@@ -492,7 +511,8 @@ distance_km = distance_metres / 1000;</textarea>
                     <div class="answer">
                         <strong>Composants à ajouter :</strong>
                         <ul>
-                            <li><code class="code-inline">LocationSensor</code> (Capteur de localisation) - Composant invisible</li>
+                            <li><code class="code-inline">LocationSensor</code> (Capteur de localisation) - Composant
+                                invisible</li>
                             <li><code class="code-inline">Label</code> pour afficher la latitude actuelle</li>
                             <li><code class="code-inline">Label</code> pour afficher la longitude actuelle</li>
                             <li><code class="code-inline">TextBox</code> pour saisir la latitude cible</li>
@@ -522,7 +542,7 @@ when LocationSensor1.LocationChanged do:
         latCible,
         lonCible
     )</textarea>
-                    
+
                     <br>
                     <div class="editor-label">Procédure de calcul de distance</div>
                     <textarea class="code-editor" readonly>// Procédure CalculerDistance
@@ -559,7 +579,8 @@ procedure CalculerDistance(lat1, lon1, lat2, lon2):
                             </label>
                         </div>
                         <div class="screenshot-preview" id="preview-q3">
-                            <div class="no-screenshots">Aucune capture d'écran ajoutée. Cliquez sur le bouton pour en ajouter.</div>
+                            <div class="no-screenshots">Aucune capture d'écran ajoutée. Cliquez sur le bouton pour en
+                                ajouter.</div>
                         </div>
                     </div>
                 </div>
@@ -601,17 +622,21 @@ console.log(`Distance: ${(distanceVersAmiens/1000).toFixed(2)} km`);</textarea>
 
             <div class="section">
                 <h2>Question 4 : Système d'alerte avec notification</h2>
-                
+
                 <div class="info-box">
-                    <strong>Objectif :</strong> Déclencher une notification unique quand on s'approche du point cible (fixe) de la Question 3.
+                    <strong>Objectif :</strong> Déclencher une notification unique quand on s'approche du point cible
+                    (fixe) de la Question 3.
                 </div>
 
                 <div class="question">
                     <div class="question-title">Composants supplémentaires</div>
                     <div class="answer">
                         <ul>
-                            <li><code class="code-inline">Notifier</code> (Notificateur) - Composant invisible pour les alertes.</li>
-                            <li><code class="code-inline">TextBox</code> (ZoneDeTexte) - Pour saisir la distance d'alerte (ex: <code class="code-inline">TextBoxDistanceAlerte</code>). Valeur par défaut : 1 (km).</li>
+                            <li><code class="code-inline">Notifier</code> (Notificateur) - Composant invisible pour les
+                                alertes.</li>
+                            <li><code class="code-inline">TextBox</code> (ZoneDeTexte) - Pour saisir la distance
+                                d'alerte (ex: <code class="code-inline">TextBoxDistanceAlerte</code>). Valeur par défaut
+                                : 1 (km).</li>
                         </ul>
                     </div>
                 </div>
@@ -619,11 +644,15 @@ console.log(`Distance: ${(distanceVersAmiens/1000).toFixed(2)} km`);</textarea>
                 <div class="question">
                     <div class="question-title">Logique de notification unique (Automate à états)</div>
                     <div class="answer">
-                        <p>Pour n'envoyer l'alerte qu'une seule fois, on utilise un automate à états. Le plus simple est une variable globale, par exemple <code class="code-inline">alerteEnvoyee</code>, initialisée à <code class="code-inline">false</code>.</p>
+                        <p>Pour n'envoyer l'alerte qu'une seule fois, on utilise un automate à états. Le plus simple est
+                            une variable globale, par exemple <code class="code-inline">alerteEnvoyee</code>,
+                            initialisée à <code class="code-inline">false</code>.</p>
                         <p>L'automate a deux états :</p>
                         <ul>
-                            <li><strong>État 1 (alerteEnvoyee = false) :</strong> On surveille la distance. Si la distance est inférieure au seuil, on déclenche l'alerte ET on passe à l'état 2.</li>
-                            <li><strong>État 2 (alerteEnvoyee = true) :</strong> L'alerte a été émise. On ne fait plus rien, même si on reste sous le seuil.</li>
+                            <li><strong>État 1 (alerteEnvoyee = false) :</strong> On surveille la distance. Si la
+                                distance est inférieure au seuil, on déclenche l'alerte ET on passe à l'état 2.</li>
+                            <li><strong>État 2 (alerteEnvoyee = true) :</strong> L'alerte a été émise. On ne fait plus
+                                rien, même si on reste sous le seuil.</li>
                         </ul>
                     </div>
                     <div class="editor-label">Pseudo-code de la logique (à ajouter)</div>
@@ -671,12 +700,13 @@ if (global alerteEnvoyee = false) then:
                     </div>
                 </div>
             </div>
-            
+
             <div class="section">
                 <h2>Question 5 : Cible mobile et calcul de cap</h2>
-                
+
                 <div class="info-box">
-                    <strong>Objectif :</strong> Modifier l'application pour suivre une cible mobile (via HTTP) et afficher le cap à suivre (via Canvas).
+                    <strong>Objectif :</strong> Modifier l'application pour suivre une cible mobile (via HTTP) et
+                    afficher le cap à suivre (via Canvas).
                 </div>
 
                 <div class="question">
@@ -685,8 +715,10 @@ if (global alerteEnvoyee = false) then:
                         <ul>
                             <li><code class="code-inline">Clock</code> (Horloge) - Intervalle: 5000 ms (pour Q5.1)</li>
                             <li><code class="code-inline">Web</code> - Pour requêtes HTTP (pour Q5.1)</li>
-                            <li><code class="code-inline">Canvas</code> - Pour affichage graphique du cap (pour Q5.2)</li>
-                            <li><code class="code-inline">OrientationSensor</code> (Challenge) - Pour l'orientation (pour Q5.3)</li>
+                            <li><code class="code-inline">Canvas</code> - Pour affichage graphique du cap (pour Q5.2)
+                            </li>
+                            <li><code class="code-inline">OrientationSensor</code> (Challenge) - Pour l'orientation
+                                (pour Q5.3)</li>
                         </ul>
                     </div>
                 </div>
@@ -744,11 +776,13 @@ when Web1.GotText(responseCode, responseType, responseContent) do:
                             <span class="screenshot-title">📸 Captures d'écran AppInventor - Question 5 (HTTP)</span>
                             <label class="upload-btn">
                                 + Ajouter une capture
-                                <input type="file" accept="image/*" multiple onchange="handleScreenshots(event, 'q5_http')">
+                                <input type="file" accept="image/*" multiple
+                                    onchange="handleScreenshots(event, 'q5_http')">
                             </label>
                         </div>
                         <div class="screenshot-preview" id="preview-q5_http">
-                            <div class="no-screenshots">Aucune capture d'écran ajoutée. Cliquez sur le bouton pour en ajouter.</div>
+                            <div class="no-screenshots">Aucune capture d'écran ajoutée. Cliquez sur le bouton pour en
+                                ajouter.</div>
                         </div>
                     </div>
                 </div>
@@ -756,7 +790,9 @@ when Web1.GotText(responseCode, responseType, responseContent) do:
                 <div class="question">
                     <div class="question-title">Calcul du cap (bearing)</div>
                     <div class="formula">
-                        cap = atan2(sin(λ<sub>B</sub>-λ<sub>A</sub>)cos(φ<sub>B</sub>), cos(φ<sub>A</sub>)sin(φ<sub>B</sub>) − sin(φ<sub>A</sub>)cos(φ<sub>B</sub>)cos(λ<sub>B</sub>-λ<sub>A</sub>))
+                        cap = atan2(sin(λ<sub>B</sub>-λ<sub>A</sub>)cos(φ<sub>B</sub>),
+                        cos(φ<sub>A</sub>)sin(φ<sub>B</sub>) −
+                        sin(φ<sub>A</sub>)cos(φ<sub>B</sub>)cos(λ<sub>B</sub>-λ<sub>A</sub>))
                     </div>
                     <div class="editor-label">Procédure CalculerCap</div>
                     <textarea class="code-editor" readonly>// Procédure pour calculer le cap (en degrés)
@@ -778,7 +814,7 @@ procedure CalculerCap(lat1, lon1, lat2, lon2):
     cap_deg = (cap_rad * 180 / pi + 360) modulo 360
     
     return cap_deg</textarea>
-                    
+
                     <br>
                     <div class="editor-label">JavaScript équivalent</div>
                     <textarea class="code-editor" readonly>function calculerCap(lat1, lon1, lat2, lon2) {
@@ -857,11 +893,13 @@ procedure DessinerCap(capDegres):
                             <span class="screenshot-title">📸 Captures d'écran AppInventor - Question 5 (Canvas)</span>
                             <label class="upload-btn">
                                 + Ajouter une capture
-                                <input type="file" accept="image/*" multiple onchange="handleScreenshots(event, 'q5_canvas')">
+                                <input type="file" accept="image/*" multiple
+                                    onchange="handleScreenshots(event, 'q5_canvas')">
                             </label>
                         </div>
                         <div class="screenshot-preview" id="preview-q5_canvas">
-                            <div class="no-screenshots">Aucune capture d'écran ajoutée. Cliquez sur le bouton pour en ajouter.</div>
+                            <div class="no-screenshots">Aucune capture d'écran ajoutée. Cliquez sur le bouton pour en
+                                ajouter.</div>
                         </div>
                     </div>
                 </div>
@@ -918,13 +956,14 @@ procedure DessinerFlecheRelative(angleRelatif):
     set Canvas1.PaintColor to RED
     set Canvas1.LineWidth to 8
     call Canvas1.DrawLine(centerX, centerY, endX, endY)</textarea>
-                    
+
                     <div class="screenshot-section" data-question="q5_challenge">
                         <div class="screenshot-header">
                             <span class="screenshot-title">📸 Captures d'écran AppInventor - Challenge</span>
                             <label class="upload-btn">
                                 + Ajouter une capture
-                                <input type="file" accept="image/*" multiple onchange="handleScreenshots(event, 'q5_challenge')">
+                                <input type="file" accept="image/*" multiple
+                                    onchange="handleScreenshots(event, 'q5_challenge')">
                             </label>
                         </div>
                         <div class="screenshot-preview" id="preview-q5_challenge">
@@ -964,7 +1003,7 @@ procedure DessinerFlecheRelative(angleRelatif):
             const files = event.target.files;
             for (const file of files) {
                 const reader = new FileReader();
-                reader.onload = function(e) {
+                reader.onload = function (e) {
                     createScreenshotItem(e.target.result, file.name, previewContainer);
                 }
                 reader.readAsDataURL(file);
@@ -983,14 +1022,14 @@ procedure DessinerFlecheRelative(angleRelatif):
             const caption = document.createElement('div');
             caption.className = 'screenshot-caption';
             caption.textContent = fileName;
-            
+
             const deleteBtn = document.createElement('button');
             deleteBtn.className = 'delete-btn';
             deleteBtn.innerHTML = '&times;';
             deleteBtn.onclick = () => {
                 item.remove();
                 if (container.children.length === 0) {
-                    container.innerHTML = '<div class="no-screenshots">Aucune capture d'écran ajoutée.</div>';
+                    container.innerHTML = '<div class="no-screenshots">Aucune capture d\'écran ajoutée.</div>';
                 }
             };
 
@@ -1019,5 +1058,6 @@ procedure DessinerFlecheRelative(angleRelatif):
             }
         }
     </script>
+
 </body>
 </html>
