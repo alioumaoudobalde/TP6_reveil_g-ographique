@@ -292,28 +292,32 @@
         </div>
 
         <div class="content">
-            <div class="github-instructions">
-                <h3>📦 Instructions pour GitHub</h3>
-                <p style="margin-bottom: 10px;">Pour publier ce TP sur GitHub et le partager avec vos amis :</p>
-                <ol style="line-height: 1.8;">
-                    <li>Créez un dossier <code>tp6-reveil-geo</code></li>
-                    <li>Sauvegardez ce fichier HTML comme <code>index.html</code></li>
-                    <li>Créez un dossier <code>images</code> (vous l'avez fait !)</li>
-                    <li>Placez vos captures (ex: <code>imgq31.png</code>) dans ce dossier</li>
-                    <li>Initialisez Git et poussez vers GitHub</li>
-                    <li>Activez GitHub Pages dans les paramètres du repo</li>
-                    <li>Partagez le lien : <code>https://votre-username.github.io/tp6-reveil-geo</code></li>
-                </ol>
-                
-                <div class="command-block">
-# Commandes Git à exécuter dans VS Code
-git init
-git add .
-git commit -m "Initial commit - TP6 Réveil Géographique"
-git branch -M main
-git remote add origin https://github.com/votre-username/tp6-reveil-geo.git
-git push -u origin main
-                </div>
+            <div class="section">
+                <h2>Ce qu'il faudra retenir</h2>
+                <ul>
+                    <li>Les coordonnées d'un point sur la surface du globe s'expriment en longitude/latitude.</li>
+                    <li>La puce GPS de votre mobile peut être interrogée facilement en AppInventor2.</li>
+                    <li>La géolocalisation d'une personne est intrusive dans sa vie privée, on ne doit jamais le faire sans son contentement explicite.</li>
+                    <li>Une application peut n'avoir que des composants invisibles dans son interface, elle devient alors elle-même invisible. C'est le cas des logiciels espions.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Ce qu'il faudra savoir faire</h2>
+                <ul>
+                    <li>Définir un terme technique de façon rigoureuse.</li>
+                    <li>Trouver une formule de calcul de distance entre deux coordonnées géographiques, et savoir l'appliquer notamment en choisissant les bonnes unités.</li>
+                    <li>Rafraîchir automatiquement un affichage sur l'interface.</li>
+                    <li>Déclencher une notification.</li>
+                    <li>Exploiter le protocole HTTP pour faire communiquer deux unités connectées à Internet.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Fonctionnalités</h2>
+                <p>L'application développée durant ce TP permettra d'entrer un point cible et de
+                définir une distance d'alerte. Quand l'ordiphone se rapprochera du point cible à une distance
+                inférieure à cette distance d'alerte, une notification sera déclenchée.</p>
             </div>
 
             <div class="section">
